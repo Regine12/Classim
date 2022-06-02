@@ -7,12 +7,47 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Upload Image</h1>
+    <h1>Image CLassification with <b>Classim<b> </h1>
+
+    <h3>Upload Image</h3>
 
     <form method='POST' enctype='multipart/form-data'>
         {{form.hidden_tag()}}
         {{form.file()}}
         {{form.submit()}}
     </form>
+    <style>
+        input {
+            width: 300px;
+            margin: 20px 20px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            font-family: Shanti;
+            font-size: 1.3em;
+            text-align: center;
+          }
+          input:focus {
+            outline: none;
+            border: solid 5px #00FFCE;
+        }
+                
+        body {
+            text-align: center;
+            background-color:blue;
+        }
+        p {
+            color: white;
+            font-family: Shanti;
+            font-size: 1.2em;
+            display: inline-block;
+            margin:  20px;
+        }
+        img {
+            margin: 60px 0 30px 0;
+            width: 250px;
+        }
+    </style>
+    <img src="/home/cyrille/Desktop/FILE_UPLOAD Flask/Flask-File-Uploads-main/static/files">
 </body>
 </html>
